@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="com.tutorialscache.admobintegration.MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="Google Ads"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/interstitialAdBtn"
+        android:layout_below="@id/title"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:text="Interstitial Ad"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/videoRewardAdBtn"
+        android:layout_below="@id/interstitialAdBtn"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Video Reward"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/bannerAdView"
+        ads:adUnitId="@string/banner_ad"
+        ads:adSize="BANNER"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
